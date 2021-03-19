@@ -19,4 +19,4 @@ jobs:
           requirements: |
             - paths: unmatched
               teams:
-                - Test
+                - some-test-org2122/test
