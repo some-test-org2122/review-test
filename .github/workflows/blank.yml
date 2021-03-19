@@ -20,4 +20,4 @@ jobs:
             - paths: unmatched
               teams:
                 - test
-          token: ${{ github.TOKEN }}
+          token: ${{ github.PR }}
