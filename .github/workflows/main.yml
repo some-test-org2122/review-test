@@ -14,32 +14,11 @@ jobs:
     if: github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name
 
     steps:
-      - uses: Automattic/action-required-review@v2
+      - uses: mhryshkin/action-required-review@v2
         with:
           token: ${{ secrets.VALUE }}
           requirements: |
             - paths: unmatched
               teams:
                 - test
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                - test1
