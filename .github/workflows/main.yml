@@ -20,5 +20,5 @@ jobs:
           requirements: |
             - paths: unmatched
               teams:
-                - test
-                - test1
+                - Dream team
+                - Selfish team
