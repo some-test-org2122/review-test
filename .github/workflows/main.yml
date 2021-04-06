@@ -18,8 +18,8 @@ jobs:
         with:
           token: ${{ secrets.VALUE }}
           requirements: |
-              paths: unmatched
-              teams:
+            - paths: unmatched
+            - teams:
                - any-of:
                  - dream-team
                  - selfish-team
