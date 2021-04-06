@@ -11,8 +11,9 @@ jobs:
 
     # GitHub should provide a "pull_request_review_target", but they don't and
     # the action will fail if run on a forked PR.
-    if: github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name
-
+    if: github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name &&
+     contains(github.event.pull_request.labels.*.name, 'hotfix') == false
+    
     steps:
       - uses: mhryshkin/action-required-review@v2.3.0
         with:
