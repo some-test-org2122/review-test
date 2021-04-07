@@ -17,6 +17,8 @@ jobs:
       - uses: mhryshkin/action-required-review@v2.4.0
         with:
           token: ${{ secrets.VALUE }}
+          skipOnLabels: |
+           - hotfix
           requirements: |
            - paths: unmatched
              teams:
